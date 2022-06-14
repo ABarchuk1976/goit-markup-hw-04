@@ -254,12 +254,13 @@ img {
   background-color: var(--button-accent-bg);
   color: var(--button-accent-color);
   font-family: inherit;
-  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
   padding: 10px 32px;
 }
 
@@ -338,13 +339,14 @@ img {
   flex-basis: calc(100% / 4 - var(--grid-row-gap));
   margin-left: var(--grid-row-gap);
   margin-top: var(--grid-column-gap);
-}
-
-.team-shadow {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-description {
   background-color: var(--card-bg);
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -362,7 +364,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   color: var(--h3-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
