@@ -9,6 +9,7 @@
   --footer-address-color: #ffffff;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --hero-title-color: #ffffff;
+  --button-hero-hover-bg: #188ce8;
   --button-accent-color: #ffffff;
   --button-accent-bg: #2196f3;
   --button-color: #212121;
@@ -252,25 +253,19 @@ img {
 .hero-button {
   background-color: var(--button-accent-bg);
   color: var(--button-accent-color);
-  border-color: var(--button-accent-bg);
   font-family: inherit;
   border-radius: 4px;
-  border-width: 2px;
-  border-style: solid;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--button-accent-color);
-  color: var(--button-accent-bg);
-  border-color: var(--button-accent-bg);
+  background-color: var(--button-hero-hover-bg);
 }
 
 /* Peculiarities */
