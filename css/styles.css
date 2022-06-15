@@ -234,6 +234,10 @@ img {
 
 /* Hero */
 .hero {
+  max-width: 1600px;
+  height: auto;
+  background-image: url('../images/hero-img.jpg');
+  background-size: cover;
   background-color: var(--hero-bg);
   color: var(--hero-title-color);
   text-align: center;
@@ -259,8 +263,8 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
   border-radius: 4px;
-  border: 1px solid transparent;
   padding: 10px 32px;
 }
 
@@ -275,7 +279,6 @@ img {
   display: flex;
   margin-left: calc(-1 * var(--grid-row-gap));
   margin-top: calc(-1 * var(--grid-column-gap));
-  margin-right: 0px;
 }
 
 .perculiarities-item {
@@ -331,7 +334,6 @@ img {
   display: flex;
   margin-left: calc(-1 * var(--grid-row-gap));
   margin-top: calc(-1 * var(--grid-column-gap));
-  margin-right: 0px;
   text-align: center;
 }
 
@@ -384,35 +386,15 @@ img {
 .filter-button {
   background-color: var(--button-bg);
   color: var(--button-color);
+  border: none;
   border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.06em;
-  border: none;
-  height: 38px;
   cursor: pointer;
-}
-
-.all-filters {
-  width: 73px;
-}
-
-.only-websites {
-  width: 128px;
-}
-
-.only-applications {
-  width: 145px;
-}
-
-.only-design {
-  width: 103px;
-}
-
-.only-marketing {
-  width: 130px;
+  padding: 6px 22px;
 }
 
 .filter-button:last-child {
