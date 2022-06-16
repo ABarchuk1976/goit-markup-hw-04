@@ -19,7 +19,7 @@
   --p-color: #757575;
   --body-bg: #ffffff;
   --footer-bg: #2f303a;
-  --hero-bg: #2f303a;
+  --hero-bg: #c4c4c4;
   --header-bg: #ffffff;
   --border-line-color: #eeeeee;
   --our-team-section-bg: #f5f4fa;
@@ -36,6 +36,9 @@
   --hero-pdtop: 200px;
   --hero-pdbottom: 200px;
   --body-width: 1600px;
+
+  --company-fill-color: #afb1b8;
+  --perculiarities-bg: #f5f4fa;
 }
 
 /* body */
@@ -236,7 +239,8 @@ img {
 .hero {
   max-width: 1600px;
   height: auto;
-  background-image: url('../images/hero-img.jpg');
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-img.jpg');
   background-size: cover;
   background-color: var(--hero-bg);
   color: var(--hero-title-color);
