@@ -291,6 +291,14 @@ img {
   margin-top: var(--grid-column-gap);
 }
 
+.perculiarities-icon {
+  outline: 1px solid black;
+  background-color: var(--perculiarities-bg);
+
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
 .peculiarities-title {
   display: block;
   font-weight: 700;
