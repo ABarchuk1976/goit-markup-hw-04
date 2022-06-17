@@ -49,6 +49,15 @@
   --clients-border-color: #afb1b8;
   --clients-bg: transparent;
   --clients-border-radius: 4px;
+
+  --perculiarities-icon-width: 70px;
+  --perculiarities-icon-height: 70px;
+
+  --social-icon-width: 20px;
+  --social-icon-height: 20px;
+
+  --clients-icon-width: 106px;
+  --clients-icon-height: 60px;
 }
 
 /* body */
@@ -350,14 +359,22 @@ img {
 }
 
 .perculiarities-item-icon {
-  text-align: center;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--perculiarities-bg);
-  padding: 25px 100px;
   margin-bottom: 30px;
+}
+
+.perculiarities-icon-size {
+  width: var(--perculiarities-icon-width);
+  height: var(--perculiarities-icon-height);
 }
 
 .peculiarities-title {
   display: block;
+  text-align: left;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -368,6 +385,7 @@ img {
 
 .peculiarities-p {
   line-height: 1.71;
+  text-align: left;
 }
 /* destinations */
 .destinations {
@@ -466,7 +484,6 @@ img {
 
 .clients-list {
   display: flex;
-  justify-content: center;
   margin-left: calc(-1 * var(--grid-row-gap));
   margin-top: calc(-1 * var(--grid-column-gap));
 }
@@ -478,10 +495,13 @@ img {
 }
 
 .clients-list-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   margin: 0;
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
   color: var(--clients-icons-color);
   background-color: var(--clients-bg);
   border: 1px solid var(--clients-border-color);
@@ -492,6 +512,16 @@ img {
 .clients-list-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+
+.clients-icon-size {
+  width: var(--clients-icon-width);
+  height: var(--clients-icon-height);
+}
+
+.social-icon-size {
+  width: var(--social-icon-width);
+  height: var(--social-icon-height);
 }
 /* styles for portfolio.html/main */
 
