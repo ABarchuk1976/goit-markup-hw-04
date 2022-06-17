@@ -126,11 +126,6 @@ img {
   text-decoration: none;
 }
 
-.header-logo:hover,
-.header-logo:focus {
-  color: var(--accent-color);
-}
-
 /* Menu */
 
 .header-menu {
@@ -194,11 +189,6 @@ img {
   color: var(--logo-footer-color);
   text-decoration: none;
   margin-bottom: 20px;
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-  color: var(--accent-color);
 }
 
 .footer-address-lists {
@@ -291,19 +281,11 @@ img {
   margin-top: var(--grid-column-gap);
 }
 
-.icon-container {
-  display: inline-block;
-  width: 100%;
-
-  outline: 1px solid black;
+.perculiarities-item-icon {
+  text-align: center;
   background-color: var(--perculiarities-bg);
-
-  padding: 25px 100px;
+  padding: 25px 0;
   margin-bottom: 30px;
-}
-
-.perculiarities-icon {
-  fill: currentColor;
 }
 
 .peculiarities-title {
