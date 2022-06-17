@@ -29,7 +29,6 @@
 
   --grid-row-gap: 30px;
   --grid-column-gap: 30px;
-  --grid-column-number: 3;
   --container-width: 1200px;
   --default-pdleft: 15px;
   --default-pdright: 15px;
@@ -45,6 +44,11 @@
   --team-social-icons-bg: transparent;
   --team-social-icons-color: #afb1b8;
   --team-social-icons-hover-color: #ffffff;
+
+  --clients-icons-color: #afb1b8;
+  --clients-border-color: #afb1b8;
+  --clients-bg: transparent;
+  --clients-border-radius: 4px;
 }
 
 /* body */
@@ -72,8 +76,7 @@ li {
   padding: 0;
 }
 
-img,
-svg {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -98,6 +101,7 @@ svg {
   padding-top: var(--defalt-pdtop);
   padding-bottom: var(--defalt-pdbottom);
   margin: 0 auto;
+  text-align: center;
 }
 
 .container {
@@ -110,6 +114,7 @@ svg {
 }
 
 .fill-icon {
+  display: block;
   fill: currentColor;
 }
 
@@ -374,10 +379,11 @@ svg {
 /* destinations */
 .destinations {
   padding-top: 0;
-  text-align: center;
 }
 
-.destinations-title {
+.destinations-title,
+.team-title,
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -421,15 +427,6 @@ svg {
   background-color: var(--card-bg);
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--h2-color);
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .team-name {
@@ -480,6 +477,36 @@ svg {
   padding: 0;
   margin: 0;
   color: inherit;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  margin-left: calc(-1 * var(--grid-row-gap));
+  margin-top: calc(-1 * var(--grid-column-gap));
+}
+
+.clients-list-item {
+  flex-basis: calc(100% / 6 - var(--grid-row-gap));
+  margin-left: var(--grid-row-gap);
+  margin-top: var(--grid-column-gap);
+}
+
+.clients-list-link {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 16px 32px;
+  color: var(--clients-icons-color);
+  background-color: var(--clients-bg);
+  border: 1px solid var(--clients-border-color);
+  border-radius: var(--clients-border-radius);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 /* styles for portfolio.html/main */
 
