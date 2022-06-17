@@ -101,6 +101,10 @@ img {
   margin-right: auto;
 }
 
+.fill-icon {
+  fill: currentColor;
+}
+
 /* Header */
 .header {
   width: 100%;
@@ -134,7 +138,7 @@ img {
 }
 
 .header-item {
-  display: block;
+  display: flex;
 }
 
 .header-item:not(:last-child) {
@@ -161,16 +165,24 @@ img {
 }
 
 .header-link-item-decor {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-weight: 500;
   color: var(--header-link-color);
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--header-link-color);
 }
 
 .header-link-item-decor:hover,
 .header-link-item-decor:focus {
   color: var(--accent-color);
+}
+
+.shift {
+  display: block;
+  margin-left: 10px;
 }
 
 /* Footer */
