@@ -41,6 +41,10 @@
 
   --company-fill-color: #afb1b8;
   --perculiarities-bg: #f5f4fa;
+
+  --team-social-icons-bg: transparent;
+  --team-social-icons-color: #afb1b8;
+  --team-social-icons-hover-color: #ffffff;
 }
 
 /* body */
@@ -265,6 +269,7 @@ svg {
 .footer-social-item {
   display: block;
   padding: 12px;
+  border: none;
   border-radius: 50%;
   background-color: var(--footer-social-icons-bg);
   list-style: none;
@@ -440,6 +445,41 @@ svg {
   line-height: 1.19;
   color: var(--p-color);
   background-color: var(--card-bg);
+  margin-bottom: 16px;
+}
+
+.team-social-items {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social-item {
+  display: block;
+  padding: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--team-social-icons-bg);
+  list-style: none;
+  margin: 0;
+  color: var(--team-social-icons-color);
+  cursor: pointer;
+}
+
+.team-social-item:hover,
+.team-social-item:focus {
+  background-color: var(--accent-color);
+  color: var(--team-social-icons-hover-color);
+}
+
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
 }
 /* styles for portfolio.html/main */
 
