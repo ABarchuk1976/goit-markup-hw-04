@@ -7,6 +7,8 @@
   --header-link-color: #757575;
   --header-border-color: #ececec;
   --footer-address-color: #ffffff;
+  --footer-call-to-color: #ffffff;
+  --footer-social-icons-bg: rgba(255, 255, 255, 0.1);
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --hero-title-color: #ffffff;
   --button-hero-hover-bg: #188ce8;
@@ -66,11 +68,13 @@ li {
   padding: 0;
 }
 
-img {
+img,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 /* common styles for header and footer*/
 
 .visually-hidden {
@@ -192,6 +196,11 @@ img {
   padding-bottom: 60px;
 }
 
+.footer .container {
+  display: flex;
+  align-items: flex-start;
+}
+
 .footer-logo {
   display: block;
   font-family: 'Raleway', 'Arial', sans-serif;
@@ -234,6 +243,50 @@ img {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
+}
+
+.footer-right-block {
+  padding-top: 12px;
+  margin-left: 70px;
+  color: var(--footer-call-to-color);
+}
+
+.footer-call-to {
+  display: block;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-social-items {
+  display: flex;
+}
+
+.footer-social-item {
+  display: block;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--footer-social-icons-bg);
+  list-style: none;
+  margin: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
 }
 /* styles for index.html/main */
 
@@ -296,7 +349,7 @@ img {
 .perculiarities-item-icon {
   text-align: center;
   background-color: var(--perculiarities-bg);
-  padding: 25px 0;
+  padding: 25px 100px;
   margin-bottom: 30px;
 }
 
@@ -437,16 +490,6 @@ img {
   margin-left: var(--grid-row-gap);
   margin-top: var(--grid-column-gap);
 }
-/* перероблена через псевдокласи */
-/* Not for column number x n + 1 */
-/*.portfolio-card-item:not(:nth-child(3n + 1)) {
-  margin-left: var(--grid-row-gap);
-} */
-/* For all after column number */
-/*.portfolio-card-item:nth-child(n + 4) {
-  margin-top: var(--grid-column-gap);
-}
- */
 
 .portfolio-link {
   display: block;
