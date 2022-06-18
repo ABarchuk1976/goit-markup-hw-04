@@ -290,7 +290,7 @@ img {
   border: none;
   border-radius: 50%;
   background-color: var(--footer-social-icons-bg);
-  padding: 20px;
+  padding: 12px;
 }
 
 .footer-social-link:hover,
@@ -374,9 +374,13 @@ img {
   height: 70px;
 }
 
-.icon-clock-size,
-.icon-astronaut-size {
+.icon-clock-size {
   width: 70px;
+  height: 70px;
+}
+
+.icon-astronaut-size {
+  width: 79.31px;
   height: 70px;
 }
 .peculiarities-title {
