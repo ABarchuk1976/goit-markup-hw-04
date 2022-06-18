@@ -521,9 +521,34 @@ img {
   border: 1px solid var(--accent-color);
 }
 
-.clients-icon-size {
-  width: var(--clients-icon-width);
-  height: var(--clients-icon-height);
+.icon-company1-size {
+  width: 41px;
+  height: 46.85px;
+}
+
+.icon-company2-size {
+  width: 40px;
+  height: 52px;
+}
+
+.icon-company3-size {
+  width: 43.46px;
+  height: 41.18px;
+}
+
+.icon-company4-size {
+  width: 72px;
+  height: 40.62px;
+}
+
+.icon-company5-size {
+  width: 62.54px;
+  height: 45.43px;
+}
+
+.icon-company6-size {
+  width: 93.79px;
+  height: 43.93px;
 }
 
 .social-icon-size {
