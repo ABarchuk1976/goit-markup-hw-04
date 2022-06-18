@@ -290,6 +290,7 @@ img {
   border: none;
   border-radius: 50%;
   background-color: var(--footer-social-icons-bg);
+  padding: 20px;
 }
 
 .footer-social-link:hover,
@@ -598,6 +599,7 @@ img {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--grid-row-gap));
   margin-top: calc(-1 * var(--grid-column-gap));
+  text-align: left;
 }
 
 .portfolio-card-item {
