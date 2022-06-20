@@ -261,7 +261,6 @@ img {
 }
 
 .footer-right-block {
-  padding-top: 12px;
   margin-left: 70px;
   color: var(--footer-call-to-color);
 }
@@ -564,7 +563,7 @@ img {
 .filter-buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter-button {
