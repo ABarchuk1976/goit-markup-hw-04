@@ -396,33 +396,35 @@ body {
 }
 
 /* Постоянные клиенты */
+.client-list {
+  display: flex;
+  margin-left: calc(-1 * 30px);
+}
+
+.client-item {
+  flex-basis: calc(100% / 6-30px);
+  margin-left: 30px;
+}
+
 .clients {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding-top: 0;
-  margin-right: 20px;
-  align-content: center;
+  color: inherit;
+}
+
+.clientlogo {
+  fill: currentColor;
 }
 
 .clients:hover,
-.clients :focus {
+.clients:focus {
   border-color: var(--accent-color);
-}
-.clientlogo {
-  height: 60px;
-  width: 106px;
-  padding-top: 0;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin: auto;
-  fill: #afb1b8;
-}
-.clientlogo:hover,
-.clientlogo:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Footer */
